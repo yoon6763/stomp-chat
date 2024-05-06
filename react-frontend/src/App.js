@@ -26,8 +26,9 @@ function CreateReadChat() {
         client.current.publish({
             destination: '/pub/chat',
             body: JSON.stringify({
-                applyId: apply_id,
-                chat: chat,
+                channelId: 3,
+                userId: 1,
+                message: chat,
             }),
         });
 
